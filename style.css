@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    position: relative;
+}
+
+.logo_main {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.logo_spikes {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform: scale(0.7);
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    
+}
+
+.logo_main img,
+.logo_spikes img {
+    width: 100%;
+}
+@keyframes animate{
+    0%{
+        transform: none;
+    }
+    25%{
+        transform: translate(20px 20px);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: translate(20px 20px);
+    }
+}
